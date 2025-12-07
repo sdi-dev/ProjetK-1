@@ -1002,6 +1002,9 @@
       }
     }
   }
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1424,6 +1427,20 @@
       --size: calc(var(--size-field, 0.25rem) * 12);
     }
   }
+  .btn-md {
+    @layer daisyui.l1.l2 {
+      --fontsize: 0.875rem;
+      --btn-p: 1rem;
+      --size: calc(var(--size-field, 0.25rem) * 10);
+    }
+  }
+  .btn-sm {
+    @layer daisyui.l1.l2 {
+      --fontsize: 0.75rem;
+      --btn-p: 0.75rem;
+      --size: calc(var(--size-field, 0.25rem) * 8);
+    }
+  }
   .card-xl {
     @layer daisyui.l1.l2 {
       .card-body {
@@ -1552,6 +1569,24 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
+  .md\:btn-lg {
+    @media (width >= 48rem) {
+      @layer daisyui.l1.l2 {
+        --fontsize: 1.125rem;
+        --btn-p: 1.25rem;
+        --size: calc(var(--size-field, 0.25rem) * 12);
+      }
+    }
+  }
+  .md\:btn-md {
+    @media (width >= 48rem) {
+      @layer daisyui.l1.l2 {
+        --fontsize: 0.875rem;
+        --btn-p: 1rem;
+        --size: calc(var(--size-field, 0.25rem) * 10);
+      }
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -1581,6 +1616,24 @@
     @media (width >= 64rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .lg\:btn-lg {
+    @media (width >= 64rem) {
+      @layer daisyui.l1.l2 {
+        --fontsize: 1.125rem;
+        --btn-p: 1.25rem;
+        --size: calc(var(--size-field, 0.25rem) * 12);
+      }
+    }
+  }
+  .lg\:btn-md {
+    @media (width >= 64rem) {
+      @layer daisyui.l1.l2 {
+        --fontsize: 0.875rem;
+        --btn-p: 1rem;
+        --size: calc(var(--size-field, 0.25rem) * 10);
+      }
     }
   }
   .md\:lg\:grid-cols-2 {
