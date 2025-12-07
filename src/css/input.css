@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+    --font-display: "Michroma", sans-serif;
+}
+
